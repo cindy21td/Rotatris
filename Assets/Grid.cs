@@ -57,6 +57,13 @@ public class Grid : MonoBehaviour {
 					}
 					return false;
 				}
+
+				if (idxY - 1 < 0 || grid [idxX, idxY - 1] != null) {
+					if (idxY - 1 >= 0 && grid [idxX, idxY - 1].parent == t.parent) {
+						continue;
+					}
+					return false;
+				}
 			}
 			break;
 		// right
@@ -68,6 +75,13 @@ public class Grid : MonoBehaviour {
 
 				if (idxX + 1 > WIDTH - 1 || grid [idxX + 1, idxY] != null) {
 					if (idxX + 1 <= WIDTH - 1 && grid [idxX + 1, idxY].parent == t.parent) {
+						continue;
+					}
+					return false;
+				}
+
+				if (idxY - 1 < 0 || grid [idxX, idxY - 1] != null) {
+					if (idxY - 1 >= 0 && grid [idxX, idxY - 1].parent == t.parent) {
 						continue;
 					}
 					return false;

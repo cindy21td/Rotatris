@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{400845CC-0D39-4FF5-0712-B57630B1108E}") = "Rotatris", "Assembly-CSharp.csproj", "{C480C065-326B-FFA9-791F-B3631CDDD720}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotatris", "Assembly-CSharp.csproj", "{C480C065-326B-FFA9-791F-B3631CDDD720}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

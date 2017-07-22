@@ -7,8 +7,8 @@ public class GameMaster : MonoBehaviour {
 	private float PAUSE_TIME = 1f;
 	private float currTimer;
 
-	private SpawnMaster spawn;
-	private Grid grid;
+	public SpawnMaster spawn;
+	public Grid grid;
 	private GameObject activeBlock;
 	private int move;
 
@@ -26,9 +26,7 @@ public class GameMaster : MonoBehaviour {
 		// start down first
 		gravity = 0;
 
-		spawn = FindObjectOfType<SpawnMaster> ();
 		currTimer = PAUSE_TIME;
-		grid = FindObjectOfType<Grid> ();
 
 		spawn.SpawnRandomBlock (gravity);
 		activeBlock = spawn.getActiveBlock ();
@@ -50,19 +48,19 @@ public class GameMaster : MonoBehaviour {
 		} else if (gravity != 2 && checkKey(KeyCode.LeftArrow)) {
 			// Move left
 			if (gravity == gravityKeys [KeyCode.LeftArrow]) {
-				currTimer = 1.25f * PAUSE_TIME;
+				currTimer = 0.95f * PAUSE_TIME;
 			}
 			move = 1;
 		} else if (gravity != 1 && checkKey(KeyCode.RightArrow)) {
 			// Move right
 			if (gravity == gravityKeys [KeyCode.RightArrow]) {
-				currTimer = 1.25f * PAUSE_TIME;
+				currTimer = 0.95f * PAUSE_TIME;
 			}
 			move = 2;
 		} else if (checkKey(KeyCode.DownArrow)) {
 			// Move down
 			if (gravity == gravityKeys [KeyCode.DownArrow]) {
-				currTimer = PAUSE_TIME;
+				currTimer = 0.95f * PAUSE_TIME;
 			}
 			move = 0;
 		} else if (currTimer < 0 && !grid.CheckMove (activeBlock.transform, gravity)) {

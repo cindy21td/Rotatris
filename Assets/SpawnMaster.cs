@@ -13,9 +13,8 @@ public class SpawnMaster : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	//void Update () {
+	//}
 
 	public void SpawnRandomBlock(int gravity) {
 		int idx = Random.Range(0, blocks.Length - 1);
