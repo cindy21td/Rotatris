@@ -8,7 +8,9 @@ public class Grid : MonoBehaviour {
 	public static int HEIGHT = 18;
 	public static int WIDTH = 12;
 
-	Text text;
+    private static int TOP_IDX = 15;
+
+	public Text text;
 
 	// TOP 		--> 7.5 	==> 15
 	// BOTTOM 	--> -7.5 	==> 0
@@ -16,16 +18,17 @@ public class Grid : MonoBehaviour {
 	// RIGHT	--> 5.5		==> 11
 
 	private Transform[,] grid = new Transform[WIDTH, HEIGHT];
-
-	// Use this for initialization
-	void Start () {
-		text = GameObject.FindObjectOfType<Text> ();
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public bool CheckGameOver () {
+        for (int i = 0; i < WIDTH; i++)
+        {
+            if (grid[i, TOP_IDX] != null)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
 	public bool CheckMove(Transform obj, int action) {
 		switch (action) {

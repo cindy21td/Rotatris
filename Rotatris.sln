@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotatris", "Assembly-CSharp.csproj", "{C480C065-326B-FFA9-791F-B3631CDDD720}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rotatris", "rotatris.csproj", "{215F833C-6A6D-D912-6451-8E6F371475DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C480C065-326B-FFA9-791F-B3631CDDD720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C480C065-326B-FFA9-791F-B3631CDDD720}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C480C065-326B-FFA9-791F-B3631CDDD720}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C480C065-326B-FFA9-791F-B3631CDDD720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215F833C-6A6D-D912-6451-8E6F371475DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215F833C-6A6D-D912-6451-8E6F371475DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215F833C-6A6D-D912-6451-8E6F371475DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215F833C-6A6D-D912-6451-8E6F371475DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
